@@ -1,0 +1,160 @@
+/* include two fonts from googlefont website*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital@1&family=Roboto&display=swap');
+body {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* set margin auto that The browser calculates the remaining width of the space and distributes
+ it equally from side to side*/
+.top {
+  margin: auto;
+  height: 450px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: skyblue;
+}
+
+/* set margin and size of image at the top*/
+.top #myimage {
+  margin-top: 30px;
+  max-width: 300px;
+  max-height: 300px;
+}
+/* set the text in the middle and font style*/
+.top #nameAndJob {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* set font size, and font style for my name at the top of web site*/
+.top #myfullname {
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-family: Anton, Vernon-Adams;
+}
+
+/* remove underline and blue font color for anchor tags*/
+a {
+  text-decoration: none;
+}
+
+.fa-download {
+  padding-right: 5px;
+}
+
+/* make resumelink round shape and set text and background color*/
+.top #resumelink {
+  padding: 5px 30px;
+  color: black;
+  border-radius: 50px 50px;
+  background-color: white;
+}
+
+.top #movetocontact {
+  padding: 5px 30px;
+  background-color: black;
+  border-radius: 50px 50px;
+  color: white;
+}
+
+/* set infographic style(background color, font style, flex, padding)*/
+body .infographic {
+  padding: 10px 10px;
+  display: flex;
+  box-shadow: 5px 5px 5px 5px gray;
+  font-family: 'Open Sans', sans-serif;
+  flex-direction: column-reverse;
+  background-color: azure;
+}
+
+.infographic .myinfo {
+  margin-bottom: 10px;
+}
+
+.honesty {
+  flex: 0.8;
+}
+
+.education {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Roboto, sans-serif;
+}
+
+.education .eduinfo {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 1px 5px 15px;
+  height: 200px;
+}
+.eduinfo #leftedu {
+  flex: 0.3;
+  background-color: #8cbded;
+  padding-top: 30px;
+  color: white;
+}
+
+/* below codes are for its ids and classes style(padding, margin, font style, background color, text position etc...*/
+.eduinfo #rightedu {
+  padding: 35px;
+}
+
+.eduinfo #diploma {
+  font-size: 30px;
+  margin-top: 0;
+}
+.eduinfo #gradyear {
+  margin-bottom: 5px;
+}
+
+#rightedu {
+  text-align: left;
+}
+
+#rightedu #diploma {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#rightedu #senecacollege {
+  color: grey;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#my-form {
+  margin-top: 30px;
+  box-shadow: 2px 2px 2px 2px black;
+  text-align: center;
+}
+
+/* css media query for responsive web design(especailly for mobile devices in this cases)*/
+@media (max-width: 460px) {
+  #myimage {
+    width: 100%;
+  }
+
+  #resumentAndform #resumelink {
+    margin: 0%;
+  }
+  /*  two clickable box change its shape as the screen pixel shrinks*/
+  #resumeAndform {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 7%;
+    margin-left: 20%;
+    row-gap: 10px;
+  }
+
+  .top #myfullname {
+    font-size: 30px;
+  }
+  #rightedu {
+    font-size: x-small;
+  }
+  /* all text should be inside of text box*/
+  body p {
+    word-break: break-all;
+  }
+}
